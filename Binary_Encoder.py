@@ -40,14 +40,14 @@ def gen_encoder(inList):
 
 
 # Inverts the encoder
-def den_decoder(inDict):
+def gen_decoder(inDict):
     return(dict(zip(inDict.values(), inDict.keys())))
 
 
 # String in python are immutable, so they hard to be converted to lists and back
 def main():
     encoder = gen_encoder(list(string.printable))
-    decoder = den_decoder(encoder)
+    decoder = gen_decoder(encoder)
 
     encoded = []
     demo_string = "Hello World!"
