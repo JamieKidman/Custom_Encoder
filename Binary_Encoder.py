@@ -1,7 +1,6 @@
 import string
 
 
-# I had to revisit short circuit evaluation because the first if made the else (which was an if) always true.
 def add_one_binary(value):
     for i in range(1, len(value) + 1):
         if(value[-i] == "1"):
