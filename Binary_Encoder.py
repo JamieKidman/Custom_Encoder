@@ -39,11 +39,11 @@ def gen_encoder(inList):
 
 
 # Inverts the encoder
-def gen_decoder(inDict):
-    return(dict(zip(inDict.values(), inDict.keys())))
+def gen_decoder(inEncoder):
+    return(dict(zip(inEncoder.values(), inEncoder.keys())))
 
 
-# String in python are immutable, so they hard to be converted to lists and back
+# String in python are immutable, so they had to be converted to lists and back
 def main():
     encoder = gen_encoder(list(string.printable))
     decoder = gen_decoder(encoder)
