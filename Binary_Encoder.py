@@ -1,6 +1,7 @@
 import string
 
 
+# I made this without looking it up online, to prove that I could
 def add_one_binary(value):
     for i in range(1, len(value) + 1):
         if(value[-i] == "1"):
